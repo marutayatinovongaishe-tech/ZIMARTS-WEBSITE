@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZimArts Cultural Hub | Gallery</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" style="text-align: center; padding: 2rem; background: var(--color-primary); color: white;">
+            <h1 class="hero-animation">Media Gallery</h1>
+            <p>Explore moments from exhibitions, events, and studio sessions</p>
+        </section>
+
+        <!-- Category Tabs -->
+        <div class="gallery-tabs">
+            <button class="gallery-tab active-tab" data-category="Exhibitions">🖼️ Exhibitions</button>
+            <button class="gallery-tab" data-category="Events">🎉 Events</button>
+            <button class="gallery-tab" data-category="Studio">🎨 Studio</button>
+        </div>
+
+        <!-- Gallery Container (JavaScript will fill this) -->
+        <div id="gallery-container"></div>
+
+        <!-- Video Section with Custom Controls -->
+        <div class="video-section">
+            <h2 style="text-align: center; color: var(--color-primary);">🎬 Featured: ZimArts Documentary</h2>
+            <video id="custom-video" poster="assets/video/poster.jpg">
+                <source src="assets/video/zimarts-showreel.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-controls">
+                <button id="play-pause-btn">▶️ Play</button>
+                <button id="mute-btn">🔊 Mute</button>
+                <span id="time-display">0:00 / 0:00</span>
+            </div>
+            <p style="font-size: 0.8rem; margin-top: 0.5rem;">🎥 ZimArts Cultural Hub Showreel (placeholder - add your own video)</p>
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 ZimArts Cultural Hub | contact@zimarts.org</p>
+        <!-- Social media icons -->
+    </footer>
+    <!-- First load data, then page-specific JS, then main -->
+    <script src="js/data.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

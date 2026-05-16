@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZimArts Cultural Hub | About</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" style="text-align: center; padding: 2rem; background: var(--color-primary); color: white;">
+            <h1 class="hero-animation">About ZimArts</h1>
+            <p>Empowering Zimbabwe's creative voices since 2012</p>
+        </section>
+        
+        <!-- Mission & Vision -->
+        <div class="mission-section">
+            <h2>🎨 Our Mission</h2>
+            <p>To nurture and showcase Zimbabwe's emerging artistic talent while preserving and evolving our rich cultural heritage through exhibitions, workshops, and digital media.</p>
+            
+            <h2 style="margin-top: 2rem;">👁️ Our Vision</h2>
+            <p>To be Zimbabwe's leading hub for contemporary and traditional arts, connecting local artists with global opportunities.</p>
+            
+            <h2 style="margin-top: 2rem;">📖 Our History</h2>
+            <p>Founded in 2012 by a collective of artists, ZimArts has grown from a small studio space to a vibrant cultural center hosting 80+ events annually and supporting 200+ registered artists.</p>
+        </div>
+        
+        <!-- Animated Timeline -->
+        <h2 style="text-align: center; color: var(--color-primary);">🏆 Milestones</h2>
+        <div class="timeline" id="timeline-container"></div>
+        
+        <!-- Team Section -->
+        <h2 style="text-align: center; color: var(--color-primary);">👥 Meet Our Team</h2>
+        <div id="team-container"></div>
+        
+        <!-- Contact Section with Map -->
+        <h2 style="text-align: center; color: var(--color-primary);">📬 Contact Us</h2>
+        <div class="contact-section">
+            <!-- Contact Form -->
+            <div>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="contact-name">Full Name *</label>
+                        <input type="text" id="contact-name" placeholder="Your name">
+                        <span class="contact-error" id="contact-name-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-email">Email Address *</label>
+                        <input type="email" id="contact-email" placeholder="you@example.com">
+                        <span class="contact-error" id="contact-email-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-subject">Subject *</label>
+                        <input type="text" id="contact-subject" placeholder="What is this about?">
+                        <span class="contact-error" id="contact-subject-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-message">Message *</label>
+                        <textarea id="contact-message" rows="5" placeholder="Your message..."></textarea>
+                        <span class="contact-error" id="contact-message-error"></span>
+                    </div>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+                <div id="contact-form-message"></div>
+            </div>
+            
+            <!-- Map and Location -->
+            <div id="map-container"></div>
+        </div>
+        
+        <!-- Social Media Links -->
+        <div style="text-align: center; margin: 2rem 0; padding: 1rem; background: var(--color-accent); border-radius: 8px;">
+            <h3>Follow Us</h3>
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                <a href="#" style="color: var(--color-primary); text-decoration: none; font-size: 1.2rem;">📘 Facebook</a>
+                <a href="#" style="color: var(--color-primary); text-decoration: none; font-size: 1.2rem;">📸 Instagram</a>
+                <a href="#" style="color: var(--color-primary); text-decoration: none; font-size: 1.2rem;">🐦 Twitter</a>
+                <a href="#" style="color: var(--color-primary); text-decoration: none; font-size: 1.2rem;">🎵 YouTube</a>
+                <a href="#" style="color: var(--color-primary); text-decoration: none; font-size: 1.2rem;">💬 WhatsApp</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 ZimArts Cultural Hub | contact@zimarts.org</p>
+        <!-- Social media icons -->
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/about.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZimArts Cultural Hub | Workshops</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" style="text-align: center; padding: 2rem; background: var(--color-primary); color: white;">
+            <h1 class="hero-animation">Workshops & Registration</h1>
+            <p>Learn from Zimbabwe's leading artists and creatives</p>
+        </section>
+        
+        <!-- Workshops Container (JavaScript will fill this) -->
+        <div id="workshops-container"></div>
+        
+        <!-- Registration Form -->
+        <div style="max-width: 800px; margin: 0 auto; padding: 1rem;">
+            <h2 style="text-align: center; color: var(--color-primary);">Register for a Workshop</h2>
+            
+            <form id="registration-form">
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" id="fullname" placeholder="e.g., Tendai Moyo">
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" placeholder="name@example.com">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                
+                <!-- Phone (Optional but validated if provided) -->
+                <div class="form-group">
+                    <label for="phone">Phone Number (Optional)</label>
+                    <input type="tel" id="phone" placeholder="+2637XXXXXXXX or 07XXXXXXXX">
+                    <span class="error-message" id="phone-error"></span>
+                </div>
+                
+                <!-- Date of Birth (Age verification) -->
+                <div class="form-group">
+                    <label for="dob">Date of Birth * (Must be 16+)</label>
+                    <input type="date" id="dob">
+                    <span class="error-message" id="dob-error"></span>
+                </div>
+                
+                <!-- Workshop Selection -->
+                <div class="form-group">
+                    <label for="workshop-select">Select Workshop *</label>
+                    <select id="workshop-select">
+                        <option value="">-- Loading workshops --</option>
+                    </select>
+                    <span class="error-message" id="workshop-error"></span>
+                </div>
+                
+                <!-- Number of Participants -->
+                <div class="form-group">
+                    <label for="participants">Number of Participants (1-5) *</label>
+                    <input type="number" id="participants" min="1" max="5" value="1">
+                    <span class="error-message" id="participants-error"></span>
+                </div>
+                
+                <!-- Terms Checkbox -->
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="terms">
+                        I accept the <a href="#" style="color: var(--color-primary);">terms and conditions</a> *
+                    </label>
+                    <span class="error-message" id="terms-error"></span>
+                </div>
+                
+                <button type="submit">Register Now</button>
+            </form>
+            
+            <div id="form-message"></div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 ZimArts Cultural Hub | contact@zimarts.org</p>
+        <!-- Social media icons -->
+    </footer>
+    <!-- First load data, then page-specific JS, then main -->
+    <script src="js/data.js"></script>
+    <script src="js/workshops.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

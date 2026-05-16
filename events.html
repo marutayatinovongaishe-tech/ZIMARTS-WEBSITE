@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZimArts Cultural Hub | Events</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" style="text-align: center; padding: 2rem; background: var(--color-primary); color: white;">
+            <h1 class="hero-animation">Upcoming Events</h1>
+            <p>Discover exhibitions, music, film, and workshops at ZimArts</p>
+        </section>
+        
+        <!-- Filter Section -->
+        <div class="filters-container">
+            <button class="filter-btn active-filter" data-category="All">All</button>
+            <button class="filter-btn" data-category="Exhibition">Exhibitions</button>
+            <button class="filter-btn" data-category="Music">Music</button>
+            <button class="filter-btn" data-category="Film">Film</button>
+            <button class="filter-btn" data-category="Workshop">Workshops</button>
+        </div>
+        
+        <!-- Month Filter Dropdown -->
+        <div style="text-align: center; margin: 1rem;">
+            <label for="month-filter">Filter by month: </label>
+            <select id="month-filter" style="padding: 0.5rem;">
+                <option>Loading months...</option>
+            </select>
+        </div>
+        
+        <!-- Events Container (JavaScript will fill this) -->
+        <div id="events-container"></div>
+    </main>
+    <footer>
+        <p>© 2025 ZimArts Cultural Hub | contact@zimarts.org</p>
+        <!-- Social media icons -->
+    </footer>
+    <!-- First load data, then page-specific JS, then main -->
+    <script src="js/data.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

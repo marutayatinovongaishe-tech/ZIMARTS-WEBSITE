@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZimArts Cultural Hub | Artists</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" style="text-align: center; padding: 2rem; background: var(--color-primary); color: white;">
+            <h1 class="hero-animation">Our Artists</h1>
+            <p>Meet the creative minds behind ZimArts Cultural Hub</p>
+        </section>
+        
+        <!-- Search Box -->
+        <div class="search-container">
+            <input type="text" id="artist-search" placeholder="🔍 Search by name, discipline, or bio...">
+            <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">
+                Try: Visual Art, Music, Film, Literature, or Digital Arts
+            </p>
+        </div>
+        
+        <!-- Artists Container (JavaScript will fill this) -->
+        <div id="artists-container"></div>
+    </main>
+    <footer>
+        <p>© 2025 ZimArts Cultural Hub | contact@zimarts.org</p>
+        <!-- Social media icons -->
+    </footer>
+    <!-- First load data, then page-specific JS, then main -->
+    <script src="js/data.js"></script>
+    <script src="js/artists.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
